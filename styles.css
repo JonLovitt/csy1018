@@ -98,13 +98,21 @@ header{
 
 .h1 {
     font-family: 'Inconsolata', monospace;
-    text-align: center
+    text-align: center;
 }
 
 .job { 
-    text-align: center
+    text-align: center;
 }
 
-.footer p {
+.footer {
+
+    font-family: 'Encode Sans Condensed', sans-serif;
+
+}
+
+.img5 {
+    height: 20px; 
+    width: 25px;
 
 }
