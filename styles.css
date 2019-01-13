@@ -1,4 +1,4 @@
-header{
+header{ /* in the header is simply set a font size and colour, I also made it so it was always centred*/
     font-size: 3em;
     color: #111;
     font-weight: bold;
@@ -9,12 +9,12 @@ header{
 }
 
 
-
-.navbar a:hover {
-    background-color: #111
+/* this is the Part that makes the Navbar change colour when it's being hovered over*/ 
+.navbar a:hover {  
+    background-color: #111 
 }
 
-.navbar {
+.navbar { /*this is the Styling to create the navbar*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,12 +31,12 @@ header{
     float: left;
 }
 
-.tooltip {
+.tooltip { /* this is for the tooltip page telling it where to be displayed*/
     display: inline;
     position: relative;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltiptext { /* this tells the Style Sheet that the tooltip text will be displayed inside the box and how it will be displayed*/
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -56,7 +56,7 @@ header{
     
 }
 
-.tooltip:hover:after {
+.tooltip:hover:after { /* this shows us what will happen when the mouse is being hovered */
     background: rgba(0,0,0,.8);
     border-radius: 5px;
     bottom: 26px;
@@ -75,7 +75,7 @@ header{
     opacity: 1;
 }
 
-.columns {
+.columns { /* this is how the columns are displayed and it is common on every page to use this */
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -84,7 +84,7 @@ header{
     
 }
 
-.columns > div { 
+.columns > div { /* Using this, the Content in the columns will be relative to them */
     flex-grow: 0;
     flex-basis: 50%;
     text-align: center;
@@ -96,7 +96,7 @@ header{
     text-align: left;
 }
 
-.h1 {
+.h1 { /* this is what font the header class H1 will be */
     font-family: 'Inconsolata', monospace;
     text-align: center;
 }
@@ -118,7 +118,7 @@ header{
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) { /* all these media tags move the columns box's and the content within them and make them relative to the current screen size */
     .columns div p {
       width: 50%;
     }
